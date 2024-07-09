@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Login</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      body {
+        background-image: url(./assets/images/loginuti.png);
+        background-repeat: no-repeat;
+      }
+
+      .login_oueter {
+        width: 360px;
+        max-width: 100%;
+      }
+
+      .logo_outer {
+        text-align: center;
+      }
+
+      .logo_outer img {
+        width: 150px;
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center mt-5">
+          <div class="col-md-12 logo_outer mt-5">
+            <img src="assets/images/logo.png" />
+          </div>
+          <form action="" method="post" id="login" autocomplete="off">
+            <div
+              class="form-row card1"
+              style="background-color: #0000004a; color: white"
+            >
+              <div class="login_oueter" style="margin: auto">
+                <h3 class="log">LOGIN</h3>
+                <p style="text-align: center; font-size: small">
+                  Please enter your details
+                </p>
+                <div class="col-12">
+                  <label for="exampleInputEmail1">User Id*</label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        id="basic-addon1"
+                        style="background-color: #00000000; color: white"
+                        ><i class="fas fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      name="username"
+                      type="text"
+                      value=""
+                      class="input form-control"
+                      id="username"
+                      placeholder="Username"
+                      aria-label="Username"
+                      aria-describedby="basic-addon1"
+                      style="background-color: #00000000; color: white"
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="exampleInputPassword1">Password*</label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        id="basic-addon1"
+                        style="background-color: #00000000; color: white"
+                        ><i class="fas fa fa-lock"></i
+                      ></span>
+                    </div>
+                    <input
+                      name="password"
+                      type="password"
+                      value=""
+                      class="input form-control"
+                      id="password"
+                      placeholder="password"
+                      required="true"
+                      aria-label="password"
+                      aria-describedby="basic-addon1"
+                      style="background-color: #00000000; color: white"
+                    />
+                    <div class="input-group-append">
+                      <span
+                        class="input-group-text"
+                        onclick="password_show_hide();"
+                        style="background-color: #00000000; color: white"
+                      >
+                        <i class="fas fa fa-eye" id="show_eye"></i>
+                        <i class="fas fa fa-eye-slash d-none" id="hide_eye"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="col-sm-12 pt-3 text-end">
+                <p>Already registered <a href="#">Register</a></p>
+              </div> -->
+                <div class="col-12 mb-4">
+                  <a
+                    class="btn w-100 text-center"
+                    href="/index.html"
+                    style="background-color: #376681; color: white"
+                    >Login</a
+                  >
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- End #main -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      function password_show_hide() {
+        var x = document.getElementById("password");
+        var show_eye = document.getElementById("show_eye");
+        var hide_eye = document.getElementById("hide_eye");
+        hide_eye.classList.remove("d-none");
+        if (x.type === "password") {
+          x.type = "text";
+          show_eye.style.display = "none";
+          hide_eye.style.display = "block";
+        } else {
+          x.type = "password";
+          show_eye.style.display = "block";
+          hide_eye.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UTI Admin</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"/>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div file-include-html="assets/includes/header.html"></div>
+   
+    <div class="wrapper d-flex align-items-stretch">
+      <div class="side" file-include-html="assets/includes/sidebar.html"></div>
+
+      <!-- Page Content  -->
+    
+  <div id="content" class="p-4 p-md-4">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="mb-4 pageTitle">Generate New Courier <span><i class="fa-solid fa-caret-down"></i></span></h2>
+          </div>
+          <div class="col-md-6 text-end">
+           <!-- <a href="newpurchaseorder.html"><button type="button" class="btn btn-primary"><i class="fa fa-plus" ></i> &nbsp;&nbsp;New&nbsp;&nbsp; <i class="fa-solid fa-caret-down"></i></button></a> -->
+          </div>
+ 
+        </div><!---row -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="Sender Name">Sender Name</label>
+                        <input type="text" class="form-control" id="Sender Name" placeholder="">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="Sender Email Id">Sender Email Id</label>
+                        <input type="email" class="form-control" id="Sender Email Id" placeholder="">
+                      </div>
+                    </div>
+
+                     <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="Courier Name">Courier Name</label>
+                        <input type="text" class="form-control" id="Courier Name" placeholder="">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="Courier Weight">Courier Weight</label>
+                        <input type="email" class="form-control" id="Courier Weight" placeholder="">
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="From">From</label>
+                          <input type="text" class="form-control" id="From" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="To">To</label>
+                          <input type="email" class="form-control" id="To" placeholder="">
+                        </div>
+                      </div>
+                    
+                    <div class="form-group">
+                      <label for="Documents">No Of Documents</label>
+                      <input type="text" class="form-control" id="Documents" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="Mode">Mode Of S/A</label>
+                      <select class="form-control" id="Mode">
+                        <option>Air</option>
+                        <option>Train Route</option>                        
+                      </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="Place">Courier Delivery Place</label>
+                          <input type="text" class="form-control" id="Place">
+                        </div>
+                        <div class="form-group col-md-4 p-2">
+                          <label for="State">State</label>
+                          <select id="State" class="form-control">
+                            <option selected>Choose...</option>
+                            <option value="AP">Andhra Pradesh</option>
+	<option value="AR">Arunachal Pradesh</option>
+	<option value="AS">Assam</option>
+	<option value="BR">Bihar</option>
+	<option value="CT">Chhattisgarh</option>
+	<option value="GA">Gujarat</option>
+	<option value="HR">Haryana</option>
+	<option value="HP">Himachal Pradesh</option>
+	<option value="JK">Jammu and Kashmir</option>
+	<option value="GA">Goa</option>
+	<option value="JH">Jharkhand</option>
+	<option value="KA">Karnataka</option>
+	<option value="KL">Kerala</option>
+	<option value="MP">Madhya Pradesh</option>
+	<option value="MH">Maharashtra</option>
+        <option value="MN">Manipur</option>
+        <option value="ML">Meghalaya</option>
+	<option value="MZ">Mizoram</option>
+	<option value="NL">Nagaland</option>
+	<option value="OR">Odisha</option>
+	<option value="PB">Punjab</option>
+	<option value="RJ">Rajasthan</option>
+	<option value="SK">Sikkim</option>
+	<option value="TN">Tamil Nadu</option>
+	<option value="TG">Telangana</option>
+	<option value="TR">Tripura</option>
+	<option value="UT">Uttarakhand</option>
+	<option value="UP">Uttar Pradesh</option>
+	<option value="WB">West Bengal</option>
+	<option value="AN">Andaman and Nicobar Islands</option>
+	<option value="CH">Chandigarh</option>
+	<option value="DN">Dadra and Nagar Haveli</option>
+	<option value="DD">Daman and Diu</option>
+	<option value="DL">Delhi</option>
+	<option value="LD">Lakshadweep</option>
+	<option value="PY">Puducherry</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="Zip">Zip</label>
+                          <input type="text" class="form-control" id="Zip">
+                        </div>
+                      </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="Receiver">Receiver Name</label>
+                          <input type="text" class="form-control" id="Receiver">
+                        </div>
+                        <div class="form-group col-md-4 p-2">
+                          <label for="Id">Receiver Email Id</label>
+                          <input type="email" class="form-control" id="Id">
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="Contact">Receiver Contact </label>
+                          <input type="tel" class="form-control" id="Contact">
+                        </div>
+                      </div>
+
+                    
+                   
+                    <!-- <button type="submit" class="btn btn-primary">Generate Courier Number</button> -->
+                    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Submit
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Unique Courier Number</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Your Courier Number :-  R1125ab5
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                  </form>
+            </div>
+        </div>
+ 
+        
+     </div> <!--  page main content div -->
+            
+
+    </div>  <!----? -->
+
+    <script src="assets/js/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/progressBar.js"></script>
+
+   
+  </body>
+</html>

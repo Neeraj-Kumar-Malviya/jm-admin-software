@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UTI Admin</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <!-- <style>
+    .bttn {
+      position: sticky;
+      bottom: 0;
+    }
+  </style> -->
+
+  <body>
+    <div file-include-html="assets/includes/header.html"></div>
+
+    <div class="wrapper d-flex align-items-stretch">
+      <div class="side" file-include-html="assets/includes/sidebar.html"></div>
+
+      <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-4">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="mb-4 pageTitle">New</h2>
+          </div>
+        </div>
+        <!---row -->
+    
+      <!--  page main content div -->
+
+      <!-- <div class="form-group row py-2">
+        <label for="inputPassword" class="col-sm-2 col-form-label text-danger"
+          >Role Name*</label
+        >
+        <div class="col-sm-6">
+          <input
+            type="text"
+            class="form-control"
+            id="inputPassword"
+            placeholder=""
+          />
+        </div>
+      </div> -->
+
+      <!-- <div class="form-group row py-2">
+        <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label"
+          >Description</label
+        >
+        <div class="col-sm-6">
+          <p>Max 500 Characters</p>
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+      </div> -->
+<!-- 
+      <div class="form-group row p-3 m-0">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1"></label>
+        </div>
+        <a href="">
+          <b>This role is for Accountant users</b> <br />
+          If you mark this option, all users who are added with this role will
+          be an accountent user.</a
+        >
+      </div> -->
+
+
+      <table class="table m-0">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Full Access</th>
+            <th scope="col">View</th>
+            <th scope="col">Create</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Admin</th>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <!-- <td>
+              <select name="" id="" class="border-0">
+              <option value=""> More Permissions</option>
+              <option value="">Bulk Permissions</option>
+              <option value=""><i class="fa fa-square-o" ></i>All Permissions</option>
+              <option value=""><i class="fa fa-square-o" ></i></option>
+            </select>
+            </td> -->
+            <td>
+              <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More Permissions
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><input type="checkbox"> Bulk Permissions</a>
+                  <a class="dropdown-item" href="#"><input type="checkbox">Bulk Permissions</a>
+                  <a class="dropdown-item" href="#"><input type="checkbox">All Permissions</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">Vendor</th>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More Permissions
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><input type="checkbox"> Bulk Permissions</a>
+                  <a class="dropdown-item" href="#"><input type="checkbox">Bulk Permissions</a>
+                  <a class="dropdown-item" href="#"><input type="checkbox">All Permissions</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Purchase Order</th>
+
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More Permissions
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><input type="checkbox"> Bulk Permissions</a>
+                  <a class="dropdown-item" href="#"><input type="checkbox">Bulk Permissions</a>
+                  <a class="dropdown-item" href="#"><input type="checkbox">All Permissions</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Admin billing data </th>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More Permissions
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><input type="checkbox"> Bulk Permissions</a>
+                  <a class="dropdown-item" href="#"><input type="checkbox">Bulk Permissions</a>
+                  <a class="dropdown-item" href="#"><input type="checkbox">All Permissions</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">Courier </th>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More Permissions
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><input type="checkbox"> Bulk Permissions</a>
+                  <a class="dropdown-item" href="#"><input type="checkbox">Bulk Permissions</a>
+                  <a class="dropdown-item" href="#"><input type="checkbox">All Permissions</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">Insurance Tracker </th>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More Permissions
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><input type="checkbox"> Bulk Permissions</a>
+                  <a class="dropdown-item" href="#"><input type="checkbox">Bulk Permissions</a>
+                  <a class="dropdown-item" href="#"><input type="checkbox">All Permissions</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">Salary Module </th>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="defaultCheck1"
+                />
+                <label class="form-check-label" for="defaultCheck1"></label>
+              </div>
+            </td>
+            <td>
+              <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More Permissions
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><input type="checkbox"> Bulk Permissions</a>
+                  <a class="dropdown-item" href="#"><input type="checkbox">Bulk Permissions</a>
+                  <a class="dropdown-item" href="#"><input type="checkbox">All Permissions</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="float-end bttn">
+        <button type="button" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-primary">Cancel</button>
+      </div>
+    </div>
+    
+  </div> <!----? -->
+
+    <script src="assets/js/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/progressBar.js"></script>
+  </body>
+</html>

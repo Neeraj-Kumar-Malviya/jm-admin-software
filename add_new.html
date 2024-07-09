@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>UTI Admin</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+
+<!-- <style>
+.bttn{
+  position: sticky;
+  bottom: 0;
+}
+</style> -->
+
+
+<body>
+  <div file-include-html="assets/includes/header.html"></div>
+
+  <div class="wrapper d-flex align-items-stretch">
+    <div class="side" file-include-html="assets/includes/sidebar.html"></div>
+
+    <!-- Page Content  -->
+    <div id="content" class="p-4 p-md-4">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="mb-4 pageTitle">New Vendor</h2>
+        </div>
+
+
+      </div><!---row -->
+
+      <div class="row">
+        <div class="col-md-12">
+
+          <form>
+            <div class="form-group row py-2">
+              <label for="staticEmail" class="col-sm-3 col-form-label">Primary Contact <i
+                  class="fa fa-info-circle"></i></label>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" placeholder="Salutation">
+              </div>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" placeholder="First Name">
+              </div>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" placeholder="Last Name">
+              </div>
+            </div>
+
+            <div class="form-group row py-2">
+              <label for="inputPassword" class="col-sm-3 col-form-label">Categories</label>
+              <div class="col-sm-9">
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect2">
+                    <option></option>
+                    <option>Repair & Maintenance</option>
+                    <option>Electricity Bill</option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group row py-2">
+              <label for="inputPassword" class="col-sm-3 col-form-label">Company Name</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="">
+              </div>
+            </div>
+            <div class="form-group row py-2">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-danger">Vendor Display Name*</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="">
+              </div>
+            </div>
+            <div class="form-group row py-2">
+              <label for="inputPassword" class="col-sm-3 col-form-label">Vendor Email <i
+                  class="fa fa-info-circle"></i></label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputPassword" placeholder="">
+              </div>
+            </div>
+            <div class="form-group row py-2">
+              <label for="staticEmail" class="col-sm-3 col-form-label">Vendor Phone <i
+                  class="fa fa-info-circle"></i></label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Work Phone">
+              </div>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Mobile">
+              </div>
+
+            </div>
+
+            <!--  -->
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link" id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Add more details</a> 
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="form-group row py-2">
+                  <label for="staticEmail" class="col-sm-3 col-form-label">Skype Name/Number</label>
+                  <div class="col-sm-9">
+                    <div class="input-group flex-nowrap">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="addon-wrapping"><i class="fa fa-skype"></i></span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                  </div>
+               </div>
+               <div class="form-group row py-2">
+                <label for="inputPassword" class="col-sm-3 col-form-label">Designation</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="inputPassword" placeholder="">
+                </div>
+              </div>
+              <div class="form-group row py-2">
+                <label for="inputPassword" class="col-sm-3 col-form-label">Department</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="inputPassword" placeholder="">
+                </div>
+              </div>
+
+              </div>
+            
+            </div>
+
+            <div class="form-group row py-2">
+              <label for="inputPassword" class="col-sm-3 col-form-label">Website</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputPassword" placeholder="">
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-12">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="add_new.html">Other Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="address.html">Address</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact_person.html">Contact Persons </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bank_details.html">Bank Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="custom_fields.html">Custom Fields</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="reporting_tag.html">Reporting Tags</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="remark.html">Remark</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-md-12">
+          <form>
+            <div class="form-group row py-2">
+              <label for="text" class="col-sm-3 col-form-label text-danger">GST Treatment*</label>
+              <div class="col-sm-9">
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Select a GST treatment</option>
+                    <option>Register Business-regular</option>
+                    <option>Register Business-Composition</option>
+                    <option>Unregisterd Business</option>
+                    <option></option>
+                  </select>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-group row py-2">
+              <label for="name" class="col-sm-3 col-form-label text-danger">GSTIN/UIN*</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="">
+              </div>
+            </div>
+
+            <div class="form-group row py-2">
+              <label for="name" class="col-sm-3 col-form-label">PAN <i class="fa fa-info-circle"></i></label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="">
+              </div>
+            </div>
+            <div class="form-group row py-2">
+              <label for="inputPassword" class="col-sm-3 col-form-label text-danger">Source of supply*</label>
+              <div class="col-sm-9">
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect2">
+                    <option></option>
+                    <option>[MH]-Maharashtra</option>
+                    <option>[GJ]-Gujrat</option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row py-2">
+              <label for="inputPassword" class="col-sm-3 col-form-label">Currency</label>
+              <div class="col-sm-9">
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect3">
+                    <option>INR-Indian Rupee</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row py-2">
+              <label for="staticEmail" class="col-sm-3 col-form-label">Opening Balance</label>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect4">
+                    <option>Head Office</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="INR">
+              </div>
+
+            </div>
+            <div class="form-group row py-2">
+              <label for="staticEmail" class="col-sm-3 col-form-label">Payment Terms</label>
+              <div class="col-sm-9">
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect5">
+                    <option>Due on Receipt</option>
+                    <option>Net 15</option>
+                    <option>Net 30</option>
+                    <option>Net 40</option>
+                    <option></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group row py-2">
+              <label for="staticEmail" class="col-sm-3 col-form-label">TDS</label>
+              <div class="col-sm-9">
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect5">
+                    <option>Select a Tax</option>
+                    <option>Payment of contractors for Others-[2 %]</option>
+                    <option>Commission or Brokerage-[5%]</option>
+                    <option>Dividend-[10 %]</option>
+                    <option>Dividend (Reduced)-[7.5 %]</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group row py-2">
+              <label for="staticEmail" class="col-sm-3 col-form-label">Price List</label>
+              <div class="col-sm-9">
+                 <div class="form-group">
+                     <select class="form-control" id="exampleFormControlSelect5">
+                       <option></option>
+                       <option></option>
+                       <option></option>
+                       <option></option>
+                       <option></option>
+                     </select>
+                   </div>
+              </div>
+           </div>
+           <div class="form-group row py-2">
+            <label for="staticEmail" class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Allow portal access for this vendor
+                </label>
+              </div>
+            </div>
+         </div>
+    
+         <div class="form-group row py-2">
+          <label for="staticEmail" class="col-sm-3 col-form-label">Portal Language</label>
+          <div class="col-sm-9">
+             <div class="form-group">
+                 <select class="form-control" id="exampleFormControlSelect5">
+                   <option>English</option>
+                   <option></option>
+                   <option></option>
+                   <option></option>
+                   <option></option>
+                 </select>
+               </div>
+          </div>
+       </div>
+    
+       <div class="form-group row py-2">
+        <label for="staticEmail" class="col-sm-3 col-form-label">Facebook</label>
+        <div class="col-sm-9">
+          <div class="input-group flex-nowrap">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="addon-wrapping"><i class="fa fa-facebook-square"></i></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+          </div>
+          <span>http://www.facebook.com/</span>
+        </div>
+     </div>
+    
+     <div class="form-group row py-2">
+      <label for="staticEmail" class="col-sm-3 col-form-label">Twitter</label>
+      <div class="col-sm-9">
+        <div class="input-group flex-nowrap">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="addon-wrapping"><i class="fa fa-twitter-square"></i></i></span>
+          </div>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+        <span>http://www.twitter.com/</span>
+      </div>
+    </div>
+    
+    <div class="form-group row py-2">
+      <label for="staticEmail" class="col-sm-3 col-form-label">Upload File</label>
+      <div class="col-sm-9">
+        <div class="input-group mb-3">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="inputGroupFile02">
+            <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+          </div>
+          <div class="input-group-append">
+            <span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+   
+          </form>
+        </div>
+       
+          <div class="float-end bttn">
+            <button type="button" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-primary">Cancel</button>
+          </div>
+       
+      </div> 
+      <!--  page main content div -->
+
+    </div> <!----? -->
+
+    <script src="assets/js/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/progressBar.js"></script>
+
+    <!--  -->
+</body>
+
+</html>

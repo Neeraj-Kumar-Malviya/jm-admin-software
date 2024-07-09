@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UTI Admin</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div file-include-html="assets/includes/header.html"></div>
+
+    <div class="wrapper d-flex align-items-stretch">
+      <div class="side" file-include-html="assets/includes/sidebar.html"></div>
+
+      <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-4">
+        <div class="row">
+          <div class="col-md-10">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="user_role_managment_screen.html"
+                  >All Users</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="roll.html">Roles</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+<!--           
+              <button type="button" class="btn btn-primary"><a href="vendor.html" class="text-white">Vendor Master</a></button>
+              <button type="button" class="btn btn-primary"><a href="" class="text-white">Voucher Creation</a> </button>
+              <button type="button" class="btn btn-primary"><a href="address.html" class="text-white">Location Master</a></button> -->
+        
+            
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              data-whatever="@mdo"
+            >
+              Invite User
+            </button>
+            <div class="modal fade"
+              id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Invite User
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label
+                          for="recipient-name"
+                          class="col-form-label text-danger"
+                          >Email Address*</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="recipient-name"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label
+                          for="recipient-name"
+                          class="col-form-label text-danger"
+                          >Name*</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="recipient-name"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="message-text" class="col-form-label"
+                          >Role</label
+                        >
+                        <select class="form-control">
+                          <option value="">Admin</option>
+                          <option value="">Staff</option>
+                          <option value="">
+                            Staff-Assigned customers only
+                          </option>
+                          <option value="">Timesheetstaff</option>
+                        </select>
+                        <p>Unrestricted access to all modules.</p>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-dismiss="modal"
+                    >
+                      Send
+                    </button>
+                    <button type="button" class="btn btn-light">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="home"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+              >
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">S.NO.</th>
+                      <th scope="col">USER NAME</th>
+                      <th scope="col">USER ID</th>
+                      <th scope="col">CONTACT</th>
+                      <th scope="col">DESIGNATION</th>
+                      <th scope="col">DEPARTMENT</th>
+                      <th scope="col">ROLE</th>
+                      <th scope="col">ACTIVE/INACTIVE</th>
+                      <th>ACTION</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Neeraj kumar Malviya</td>
+                      <td>153302995</td>
+                      <td>7854123690</td>
+                      <td>Trainee</td>
+                      <td>IT</td>
+
+                      <td>Vendor</td>
+                      <td>Active</td>
+                      <td>
+                        <div class="d-flex">
+                          <i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;
+                          <i class="fa fa-clone"></i>&nbsp;&nbsp;
+                          <i class="fa fa-trash"></i>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Abhishek Jhariya</td>
+                      <td>153302995</td>
+                      <td>7854123690</td>
+                      <td>Web Developer</td>
+                      <td>IT</td>
+
+                      <td>PO</td>
+                      <td>Active</td>
+                      <td>
+                        <div class="d-flex">
+                          <i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;
+                          <i class="fa fa-clone"></i>&nbsp;&nbsp;
+                          <i class="fa fa-trash"></i>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Neeraj kumar Malviya</td>
+                      <td>153302995</td>
+                      <td>7854123690</td>
+                      <td>Trainee</td>
+                      <td>IT</td>
+
+                      <td>Vendor</td>
+                      <td>Inactive</td>
+                      <td>
+                        <div class="d-flex">
+                          <i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;
+                          <i class="fa fa-clone"></i>&nbsp;&nbsp;
+                          <i class="fa fa-trash"></i>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Abhishek Jhariya</td>
+                      <td>153302995</td>
+                      <td>7854123690</td>
+                      <td>Web Developer</td>
+                      <td>IT</td>
+
+                      <td>Vendor</td>
+                      <td>Active</td>
+                      <td>
+                        <div class="d-flex">
+                          <i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;
+                          <i class="fa fa-clone"></i>&nbsp;&nbsp;
+                          <i class="fa fa-trash"></i>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Hyginetech India Pvt Ltd</td>
+                      <td>153302995</td>
+                      <td>7854123690</td>
+                      <td></td>
+                      <td></td>
+
+                      <td>Vendor</td>
+                      <td>Active</td>
+                      <td>
+                        <div class="d-flex">
+                          <i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;
+                          <i class="fa fa-clone"></i>&nbsp;&nbsp;
+                          <i class="fa fa-trash"></i>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">6</th>
+                      <td>Hyginetech India Pvt Ltd</td>
+                      <td>153302995</td>
+                      <td>7854123690</td>
+                      <td></td>
+                      <td></td>
+
+                      <td>Vendor</td>
+                      <td>Active</td>
+                      <td>
+                        <div class="d-flex">
+                          <i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;
+                          <i class="fa fa-clone"></i>&nbsp;&nbsp;
+                          <i class="fa fa-trash"></i>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---row -->
+      </div>
+      <!--  page main content div -->
+    </div>
+    <!----? -->
+
+    <script src="assets/js/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/progressBar.js"></script>
+
+    <!--  -->
+  </body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>UTI Admin</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <div file-include-html="assets/includes/header.html"></div>
+
+  <div class="wrapper d-flex align-items-stretch">
+    <div class="side" file-include-html="assets/includes/sidebar.html"></div>
+
+    <!-- Page Content  -->
+
+    <div id="content" class="p-4 p-md-4">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="mb-4 pageTitle">All Inward Couriers </h2>
+          <!-- <span><i class="fa-solid fa-caret-down"></i></span> -->
+        </div>
+        <div class="col-md-6">
+          <ul class="p-0 list-unstyled d-flex justify-content-end">
+            <li><select name="" id="" class="form-select">
+                <option value="1">show</option>
+                <option value="1">10</option>
+                <option value="1">25</option>
+                <option value="1">50</option>
+                <option value="1">100</option>
+              </select></li>
+            <li class="mx-4">
+              <div class="dropdown ">
+                <a class="btn dropdown-toggle togl border" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Select Column
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"><input type="checkbox" />&nbsp; &nbsp;&nbsp;Date</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><input type="checkbox" />&nbsp; &nbsp;&nbsp;Unique Inward No.</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><input type="checkbox" />&nbsp; &nbsp;&nbsp;Sender Unique Outward
+                      No.(auto) </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><input type="checkbox" />&nbsp; &nbsp;&nbsp;FROM </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><input type="checkbox" />&nbsp; &nbsp;&nbsp;Sender Email id</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><input type="checkbox" />&nbsp; &nbsp;&nbsp;place</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><input type="checkbox" />&nbsp; &nbsp;&nbsp;Courier Received
+                      Time</a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#"><input type="checkbox" />&nbsp; &nbsp;&nbsp;Courier Delivered
+                      by</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><input type="checkbox" />&nbsp; &nbsp;&nbsp;To</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><input type="checkbox" />&nbsp; &nbsp;&nbsp;Courier Received by
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><input type="checkbox" />&nbsp; &nbsp;&nbsp;Receiver Email id </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><input type="checkbox" />&nbsp; &nbsp;&nbsp;POD Number</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><input type="checkbox" />&nbsp; &nbsp;&nbsp; Courier Company
+                      Name</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><input type="checkbox" />&nbsp; &nbsp;&nbsp;Status</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="newinward.html"><button type="button" class="btn btn-primary"><i class="fa fa-plus"></i>
+                  &nbsp;&nbsp;&nbsp;New</button></a>
+            </li>
+          </ul>
+
+
+
+        </div>
+        <div class="col-md-12">
+          <div class="table-responsive">
+            <table class="table table-hover table-bordered" style="white-space:pre">
+              <thead>
+                <tr>
+  
+                  <th scope="col">Date &nbsp;&nbsp;<i class="bi bi-arrow-down-up"></i></th>
+                  <th scope="col ">Unique Inward No. &nbsp;&nbsp;<i class="bi bi-arrow-down-up"></i></th>
+                  <th scope="col">Sender Unique Outward No.&nbsp;&nbsp;<i class="bi bi-arrow-down-up"></i>(auto)</th>
+                  <th scope="col">FROM &nbsp;&nbsp;<i class="bi bi-arrow-down-up"></i></th>
+                  <th scope="col">Sender Email id &nbsp;&nbsp; <i class="bi bi-arrow-down-up"></i></th>
+                  <th scope="col">place &nbsp;&nbsp;<i class="bi bi-arrow-down-up"></i></th>
+                  <th scope="col">Courier Received Time &nbsp;&nbsp;<i class="bi bi-arrow-down-up"></i></th>
+                  <th scope="col">Courier Delivered by &nbsp;&nbsp;<i class="bi bi-arrow-down-up"></i></th>
+                  <th scope="col">To &nbsp;&nbsp;<i class="bi bi-arrow-down-up"></i></th>
+                  <th scope="col">Courier Received by &nbsp;&nbsp;<i class="bi bi-arrow-down-up"></i></th>
+                  <th scope="col">Receiver Email id &nbsp;&nbsp;<i class="bi bi-arrow-down-up"></i></th>
+                  <th scope="col">POD Number &nbsp;&nbsp;<i class="bi bi-arrow-down-up"></i></th>
+                  <th scope="col">Courier Company Name &nbsp;&nbsp;<i class="bi bi-arrow-down-up"></i></th>
+                  <th scope="col" class="text-center"> &nbsp;&nbsp;<i class="bi bi-arrow-down-up"></i>Status</th>
+  
+  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+  
+                  <td class="text-center">09 March 2024</td>
+                  <td class="text-center">381</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">vikky parmar</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">CNERGY</td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center">Sakshi Sankhe</td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center">Shipment on the way</td>
+  
+  
+                </tr>
+  
+                <tr>
+  
+                  <td class="text-center">09 March 2024</td>
+                  <td class="text-center">381</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">vikky parmar</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">CNERGY</td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center">Sakshi Sankhe</td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center">The package is out for delivery</td>
+  
+  
+                </tr>
+  
+                <tr>
+  
+                  <td class="text-center">09 March 2024</td>
+                  <td class="text-center">381</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">vikky parmar</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">CNERGY</td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center">Sakshi Sankhe</td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center">Shipment on the way</td>
+  
+  
+                </tr>
+  
+                <tr>
+  
+                  <td class="text-center">09 March 2024</td>
+                  <td class="text-center">381</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">vikky parmar</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">CNERGY</td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center">Sakshi Sankhe</td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center">Shipment delivered successfully</td>
+  
+                </tr>
+  
+                <tr>
+  
+                  <td class="text-center">09 March 2024</td>
+                  <td class="text-center">381</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">vikky parmar</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">CNERGY</td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center">Sakshi Sankhe</td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center">Shipment on the way</td>
+  
+  
+                </tr>
+  
+                <tr>
+  
+                  <td class="text-center">09 March 2024</td>
+                  <td class="text-center">381</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">vikky parmar</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">CNERGY</td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center">Sakshi Sankhe</td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center">The package is out for delivery</td>
+  
+  
+                </tr>
+  
+                <tr>
+  
+                  <td class="text-center">09 March 2024</td>
+                  <td class="text-center">381</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">vikky parmar</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">CNERGY</td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center">Sakshi Sankhe</td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center">Shipment on the way</td>
+  
+  
+                </tr>
+  
+                <tr>
+  
+                  <td class="text-center">09 March 2024</td>
+                  <td class="text-center">381</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">vikky parmar</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">CNERGY</td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center">Sakshi Sankhe</td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                  <td class="text-center">Shipment delivered successfully</td>
+  
+                </tr>
+  
+  
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+
+
+
+      </div><!---row -->
+
+
+    </div> <!--  page main content div -->
+
+
+  </div> <!----? -->
+
+  <script src="assets/js/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="assets/js/include.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/progressBar.js"></script>
+
+
+</body>
+
+</html>

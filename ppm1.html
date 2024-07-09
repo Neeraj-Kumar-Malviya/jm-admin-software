@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>New PPM Schedule</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+
+  <!-- <style>
+    .bttn {
+      position: sticky;
+      bottom: 0;
+    }
+  </style> -->
+
+  <body>
+    <div file-include-html="assets/includes/header.html"></div>
+
+    <div class="wrapper d-flex align-items-stretch">
+      <div file-include-html="assets/includes/sidebar.html"></div>
+
+      <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-4">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="mb-4 pageTitle">New PPM Schedule</h2>
+          </div>
+        </div>
+        <!---row -->
+
+        <div class="row">
+          <div class="col-md-12">
+            <form>
+              <div class="form-group row mb-3">
+                <label
+                  for="inputPassword"
+                  class="col-sm-2 col-form-label text-danger"
+                  >Vendor Name*</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <select class="form-select" id="exampleFormControlSelect2">
+                      <option>Select a vendor</option>
+                      <option>Hyginetech India Pvt Ltd</option>
+                      <option>Adani Electricity</option>
+                      <option>TATA Power</option>
+                      <option>Adani Electricity</option>
+                    </select>
+                  </div>
+                </div>
+                <label
+                  for="inputPassword"
+                  class="col-sm-2 col-form-label text-danger"
+                  >Source of Supply*</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <select class="form-select" id="exampleFormControlSelect2">
+                      <option>[GJ]-Gujrat</option>
+                      <option>[MH]- Maharastra</option>
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                    </select>
+                  </div>
+                </div>
+
+                <label
+                  for="inputPassword"
+                  class="col-sm-2 col-form-label text-danger"
+                  >Destination of Supply*</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <select class="form-select" id="exampleFormControlSelect2">
+                      <option>[MH]- Maharastra</option>
+                      <option>[GJ]-Gujrat</option>
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row mb-3">
+                <label for="inputPassword" class="col-sm-2 col-form-label"
+                  >Branch</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group">
+                    <select class="form-select" aria-label="Default select example">
+                        <option >Banglore-Indira nagar</option>
+                        <option value="1">Ahmedabad EBG</option>
+                        <option value="2">Ashram Road</option>
+                        <option value="">Borivali Office</option>
+                        
+                      </select>
+                    
+                  </div>
+                </div>
+                <label for="From" class="col-sm-2 col-form-label text-danger"
+                  >Date</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group" id="From">
+                    <input type="date" class="form-control" placeholder="" />
+                  </div>
+                </div>
+
+                <label for="To" class="col-sm-2 col-form-label text-danger"
+                  >Due Date</label
+                >
+                <div class="col-sm-2">
+                  <div class="form-group" id="To">
+                    <input type="date" class="form-control" placeholder="" />
+                  </div>
+                </div>
+              </div>
+
+             
+            </form>
+
+          
+
+            <!--  -->
+            <div class="row w-100 mt-4 mb-2 mx-1">
+              <div class="col-md-12">
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Services</th>
+                        <th scope="col">Units</th>
+                        <th scope="col">From</th>
+                        <th scope="col">To</th>
+                        
+                        <th scope="col">Frequency</th>
+                        <th scope="col">PPM Date</th>
+                       
+                        <th scope="col">Status</th>
+                        <th scope="col"></th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row ">
+                          
+                          <select class="border-0 text-dark">
+                            <option>Select Service</option>
+                            <option>UPS-Emerson Make</option>
+                            <option>Fire Alarm</option>
+                            <option>AC</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select class="border-0 text-dark">
+                            <option>Select</option>
+                            <option>TR </option>
+                            <option>KVA</option>
+                            <option> NOs</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input
+                            type="date"
+                            class="border-0 text-dark"
+                            placeholder="5"
+                          />
+                        </td>
+                        <td>
+                          <input
+                            type="date"
+                            class="border-0 text-dark"
+                            placeholder="5"
+                          />
+                        </td>
+                        
+                        <td>
+                          <select class="border-0 text-dark">
+                            <option>Select</option>
+                            <option>Quarterly </option>
+                            <option>Half yearly</option>
+                            <option> Yearly</option>
+                          </select>
+                        </td>
+                        <td>
+                          <input
+                            type="date"
+                            class="border-0 text-dark"
+                            placeholder=""
+                          />
+                        </td>
+                        <td>
+                          <select class="border-0 text-dark">
+                            <option>Select</option>
+                            <option>Pending </option>
+                            <option>Done</option>
+                            
+                          </select>
+                        </td>
+                        <td></td>
+                        <td>
+                          <i class="bi bi-plus text-primary " style="font-size: 30px;"></i> 
+                          <i class="bi bi-copy text-primary" style="font-size: 20px;"></i> 
+                          <i class="bi bi-x text-danger" style="font-size: 30px;"></i>
+                        </td>
+                        
+                        
+                        <!-- <td class="font-weight-bold">1000</td> -->
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-100 m-0 mt-2 mb-3 mx-3">
+              <button type="button" class="btn btn-primary">
+                <i class="fa fa-plus"></i> &nbsp;&nbsp;Add Another Line
+              </button>
+            </div>
+
+            
+
+            <div class="row w-100 mx-1">
+              
+              <div class="col-md-6 mb-3">
+                <div class="form-group">
+                  <input
+                    type="file"
+                    class="form-control-file"
+                    id="exampleFormControlFile1"
+                  />
+                  <br />
+                  <small>you can upload maximum of 10 files, each 5mb</small>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <!-- <div class="form-group">
+              <label for="exampleFormControlTextarea1">Terms and Conditions</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="float-start">
+          
+          
+          <button type="button" class="btn btn-primary  ">
+            <i class="fa-solid fa-stopwatch text-white"></i>
+          </button>
+          <button type="button" class="btn btn-primary  mr-2">Save</button>
+
+          <!-- <button type="button" class="btn btn-primary">Cancel</button> -->
+        </div>
+        
+        <!--  page main content div -->
+      </div>
+    </div>
+    <!----? -->
+
+    <!--  -->
+    <script src="assets/js/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/progressBar.js"></script>
+  </body>
+</html>

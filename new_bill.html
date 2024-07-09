@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>UTI Admin</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<!-- <style>
+  .bttn {
+    position: sticky;
+    bottom: 0;
+  }
+</style> -->
+
+
+<body>
+  <div file-include-html="assets/includes/header.html"></div>
+
+  <div class="wrapper d-flex align-items-stretch">
+    <div class="side" file-include-html="assets/includes/sidebar.html"></div>
+
+    <!-- Page Content  -->
+    <div id="content" class="p-4 p-md-4">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="mb-4 pageTitle">New Bill</h2>
+        </div>
+
+
+      </div><!---row -->
+
+      <div class="row">
+        <div class="col-md-12">
+
+          <form>
+
+            <div class="form-group row py-2">
+              <label for="inputPassword" class="col-sm-2 col-form-label text-danger">Vendor Name*</label>
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect2">
+                    <option>Select a vendor</option>
+                    <option>Hyginetech India Pvt Ltd</option>
+                    <option>Adani Electricity</option>
+                    <option>TATA Power</option>
+                    <option>Adani Electricity</option>
+                  </select>
+                </div>
+              </div>
+              <label for="inputPassword" class="col-sm-2 col-form-label text-danger">Source of Supply*</label>
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect2">
+                    <option>[GJ]-Gujrat</option>
+                    <option>[MH]- Maharastra</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+              </div>
+
+              <label for="inputPassword" class="col-sm-2 col-form-label text-danger">Destination of Supply*</label>
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect2">
+                    <option>[MH]- Maharastra</option>
+                    <option>[GJ]-Gujrat</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="form-group row py-2">
+              <label for="inputPassword" class="col-sm-2 col-form-label">Branch</label>
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect2">
+                    <option>Head Office</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+              </div>
+              <label for="inputPassword" class="col-sm-2 col-form-label text-danger">Bill*</label>
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="">
+                </div>
+              </div>
+
+              <label for="inputPassword" class="col-sm-2 col-form-label">Order no</label>
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="">
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <div class="form-group row py-2">
+
+              <label for="inputPassword" class="col-sm-2 col-form-label text-danger">Warehouse Name*</label>
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="">
+                </div>
+              </div>
+
+              <label for="date" class="col-sm-2 col-form-label text-danger">Date*</label>
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <input type="date" class="form-control" placeholder="">
+                </div>
+              </div>
+              <label for="date" class="col-sm-2 col-form-label">Due Date</label>
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <input type="date" class="form-control" placeholder="">
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="form-group row py-2">
+              <!-- <label for="date" class="col-sm-2 col-form-label">Due Date</label>
+              <div class="col-sm-2">
+                <input type="date" class="form-control" placeholder="">
+              </div> -->
+              <label for="text" class="col-sm-2 col-form-label">Payment Terms</label>
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect2">
+                    <option>Due on Receipt</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+          </form>
+
+          <div class="form-group row pt-3">
+            <label for="date" class="col-form-label">Item Rates Are</label>
+            <div class="">
+              <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect2">
+                  <option>Tax Exclusive</option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                </select>
+              </div>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <label for="text" class=" col-form-label">Discount Type</label>
+            <div class="form-group">
+              <select class="form-control" id="exampleFormControlSelect2">
+                <option>At transaction less then</option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </div>
+
+          </div>
+
+          <!--  -->
+          <div class="col-md-12 pt-3">
+            <div class="table-responsive" style="max-height: 75vh;">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">ITEM DETAILS</th>
+                    <th scope="col">ACCOUNT</th>
+                    <th scope="col">QUANTITY</th>
+                    <th scope="col">RATE</th>
+                    <th scope="col">TAX</th>
+                    <th scope="col">CUSTOMER DETAILS</th>
+                    <th scope="col">AMOUNT</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row ">
+
+                      <select class="border-0">
+                        <option>Type or click to select an item</option>
+                        <option>Sanitary Disposal</option>
+                        <option>Electricity Bill</option>
+                        <option>Add New Item</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select class="border-0">
+                        <option>Select Account</option>
+                        <option>Advance to vendor</option>
+                        <option>Goods In Transit</option>
+                      </select>
+                    </td>
+                    <td><input type="text" class="border-0 text-dark" placeholder="5"></td>
+                    <td><input type="text" class="border-0 text-dark" placeholder="200"></td>
+                    <td><select class="border-0 text-dark">
+                        <option>Select a Tax</option>
+                        <option>IGST5[18%]</option>
+                      </select></td>
+                    <td></td>
+                    <td class="font-weight-bold">1000</td>
+<td>
+  <i class="bi bi-plus text-primary" style="font-size: 30px;"></i>
+<i class="bi bi-copy text-primary" style="font-size: 20px;"></i>
+<i class="bi bi-x text-danger" style="font-size: 30px;"></i>
+</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+
+          <!-- <div class=" w-100 m-0 my-2 mx-3">
+            <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> &nbsp;&nbsp;Add Another
+              Line</button>
+          </div> -->
+
+          <div class="row w-100 mx-1">
+            <div class="col-md-6 mt-4">
+              <!-- <div class="form-group w-100">
+                <label for="exampleFormControlTextarea1">Customer Notes</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div> -->
+
+            </div>
+
+            <div class="col-md-6">
+
+              <div class="row">
+                <div class="col-md-4">
+                  <p>Sub Total</p>
+                  <p>Total Quantity :5</p>
+
+                </div>
+
+                <div class="col-md-8 ">
+                  <p class="text-muted float-end">1000.00</p>
+
+                </div>
+
+
+              </div>
+
+
+              <div class="row">
+                <div class="col-md-4">
+                  <p>Discount</p>
+                  <p class="text-info">apply after tax</p>
+
+                </div>
+
+                <div class="col-md-4">
+                  <div class="input-group">
+                    <input type="text" class="form-control"
+                      aria-label="Dollar amount (with dot and two decimal places)">
+                    <div class="input-group-append">
+                      <span class="input-group-text" style="background-color: #7269FF; color: white;">$</span>
+                      <span class="input-group-text" style="background-color: #7269FF; color: white;"><i
+                          class="fa fa-angle-down" aria-hidden="true"></i>
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-md-4 ">
+                  <p class="text-muted float-end">-100.00</p>
+
+                </div>
+
+
+              </div>
+
+              <!-- <div class="row">
+                <div class="col-md-4">
+                  <p>Discount Account*</p>
+  
+                </div>
+  
+                <div class="col-md-4 ">
+                  <select class="p-1 rounded  border-secondary text-secondary">
+                    <option class="">purchase discount...</option>
+                    <option >etc..</option>
+  
+                  </select>
+                  <small class="mt-2">You can create a new account with type as Expense or other Expense</small>
+  
+                </div>
+  
+                <div class="col-md-4 ">
+                  
+                </div>
+  
+                
+              </div> -->
+
+              <div class="row mt-4">
+                <div class="col-md-6 font-weight-bold">
+                  <p>IGST [18%]</p>
+                </div>
+                <div class="col-md-6 ">
+                  <p class="float-end">180.00</p>
+                </div>
+              </div>
+
+              <div class="row my-2">
+                <div class="col-md-4">
+                  <p>Adjustment</p>
+
+                </div>
+
+                <div class="col-md-6 ">
+                  <span class="d-flex align-items-center mr-1">
+                    <input class="form-control " type="text" placeholder="">
+                    <i class="fa fa-question-circle ml-2" aria-hidden="true"></i>
+
+                  </span>
+
+
+                </div>
+
+                <div class="col-md-2 ">
+                  <p class="float-end">0</p>
+
+                </div>
+
+
+              </div>
+
+              <div class="row my-2">
+                <div class="col-md-6">
+                  <p class="font-weight-bold">Total ($)</p>
+                </div>
+                <div class="col-md-6">
+                  <p class="font-weight-bold float-end">1080.00</p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="row w-100 mx-1">
+            <div class="col-md-6">
+              <!-- <div class="form-group">
+              <label for="exampleFormControlTextarea1">Terms and Conditions</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div> -->
+            </div>
+            <div class="col-md-6">
+
+              <div class="form-group">
+
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                <small>you can upload maximum of 10 files, each 5mb</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="float-end bttn">
+          <button type="button" class="btn btn-primary">Save as Draft</button>
+          <button type="button" class="btn btn-primary">Save as Open</button>
+          <button type="button" class="btn btn-primary">Cancel</button>
+        </div>
+
+      </div>
+      <!--  page main content div -->
+
+    </div> <!----? -->
+
+    <script src="assets/js/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/progressBar.js"></script>
+
+    <!--  -->
+</body>
+
+</html>

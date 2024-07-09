@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UTI Admin</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div file-include-html="assets/includes/header.html"></div>
+
+    <div class="wrapper d-flex align-items-stretch">
+      <div class="side" file-include-html="assets/includes/sidebar.html"></div>
+
+      <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-4">
+        <div class="row">
+          <div class="col-md-10">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="user_role_managment_screen.html"
+                  >All Users</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="roll.html">Roles</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2 text-end">
+            <a href="new_user.html"
+              ><button type="button" class="btn btn-primary">
+                <i class="fa fa-plus"></i> &nbsp;&nbsp;&nbsp; New Role
+              </button></a
+            >
+          </div>
+
+          <div class="col-md-12">
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="home"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+              >
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">ROLE NAME</th>
+                       <th scope="col">Access</th>
+                      <th scope="col"></th>
+                      <!-- <th scope="col">View</th>
+                      <th scope="col">Create</th>
+                      <th scope="col">Edit</th>
+                      <th scope="col">Delete</th>
+                      <th scope="col">More Option</th> -->
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                    <td><a href="">Admin</a></td>
+                    <td>Unrestricted access to all modules.</td>
+                    <td>
+                        <div class="d-flex">
+                            <i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;
+                            <i class="fa fa-clone"></i>&nbsp;&nbsp;
+                            <i class="fa fa-trash"></i>
+                       </div>
+                            
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="">Vendor</a></td>
+                    <td>Access to all modules except reports, settings</td>
+                    <td>
+                        <div class="d-flex">
+                            <i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;
+                            <i class="fa fa-clone"></i>&nbsp;&nbsp;
+                            <i class="fa fa-trash"></i>
+
+                        </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="">Courier</a></td>
+                    <td>Access to Courier assigned customers and all vendors axcept reports, settings</td>
+                    <td>
+                        <div class="d-flex">
+                            <i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;
+                            <i class="fa fa-clone"></i>&nbsp;&nbsp;
+                            <i class="fa fa-trash"></i>
+
+                        </div>
+                    </td>
+                </tr>
+
+                  <tr>
+                    <td><a href="">Purchase Order</a></td>
+                    <td>Access to PO and all vendors except reports </td>
+                    <td>
+                        <div class="d-flex">
+                            <i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;
+                            <i class="fa fa-clone"></i>&nbsp;&nbsp;
+                            <i class="fa fa-trash"></i>
+
+                        </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="">Admin Billing</a></td>
+                    <td>Access to all User and billing except reports </td>
+                    <td>
+                        <div class="d-flex">
+                            <i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;
+                            <i class="fa fa-clone"></i>&nbsp;&nbsp;
+                            <i class="fa fa-trash"></i>
+
+                        </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="">Insurance Tracker</a></td>
+                    <td>Access to all type Insureance except reports </td>
+                    <td>
+                        <div class="d-flex">
+                            <i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;
+                            <i class="fa fa-clone"></i>&nbsp;&nbsp;
+                            <i class="fa fa-trash"></i>
+
+                        </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="">PPM Schedule</a></td>
+                    <td>Access to all type PPM Schedule except reports </td>
+                    <td>
+                        <div class="d-flex">
+                            <i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;
+                            <i class="fa fa-clone"></i>&nbsp;&nbsp;
+                            <i class="fa fa-trash"></i>
+
+                        </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="">Stationary File</a></td>
+                    <td>Access to all type Stationary File except reports </td>
+                    <td>
+                        <div class="d-flex">
+                            <i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;
+                            <i class="fa fa-clone"></i>&nbsp;&nbsp;
+                            <i class="fa fa-trash"></i>
+
+                        </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="">Salary Module</a></td>
+                    <td>Access to all type Salary Module except reports</td>
+                    <td>
+                        <div class="d-flex">
+                            <i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;
+                            <i class="fa fa-clone"></i>&nbsp;&nbsp;
+                            <i class="fa fa-trash"></i>
+
+                        </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="">Agreement Format</a></td>
+                    <td>Timesheetstaff Role </td>
+                    <td>
+                        <div class="d-flex">
+                            <i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;
+                            <i class="fa fa-clone"></i>&nbsp;&nbsp;
+                            <i class="fa fa-trash"></i>
+
+                        </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="">Travel Daily Booking</a></td>
+                    <td>Timesheetstaff Role </td>
+                    <td>
+                        <div class="d-flex">
+                            <i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;
+                            <i class="fa fa-clone"></i>&nbsp;&nbsp;
+                            <i class="fa fa-trash"></i>
+
+                        </div>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---row -->
+      </div>
+      <!--  page main content div -->
+    </div>
+    <!----? -->
+
+    <script src="assets/js/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/progressBar.js"></script>
+
+    <!--  -->
+  </body>
+</html>
